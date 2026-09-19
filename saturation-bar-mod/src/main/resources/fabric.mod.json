@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "saturation-bar",
+  "version": "1.0.0",
+  "name": "Saturation Bar",
+  "description": "Adds a yellow glow around the hunger bar to represent saturation.",
+  "authors": ["Claude Code"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/saturation-bar/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.saturationbar.SaturationBarClient"
+    ]
+  },
+  "mixins": [
+    "saturation-bar.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
